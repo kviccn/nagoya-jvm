@@ -1,0 +1,5 @@
+node_modules/
+build/
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+docs/.vitepress/vm/classes-bundle.js

@@ -1,0 +1,27 @@
+{
+  "name": "nagoya-jvm",
+  "version": "1.0.0",
+  "description": "《自己动手写Java虚拟机》Node.js 版：按 day1~day10 逐章实现的迷你 JVM（JDK 17 / JVMS 17）",
+  "type": "module",
+  "scripts": {
+    "build": "bash scripts/build.sh",
+    "day1": "node src/day1/main.js -cp build/classes day4.GaussTest",
+    "day2": "node src/day2/main.js -cp build/classes day4.GaussTest",
+    "day3": "node src/day3/main.js",
+    "day4": "node src/day4/main.js -cp build/classes day4.GaussTest",
+    "day5": "node src/day5/main.js -cp build/classes day5.StaticFieldTest",
+    "day6": "node src/day6/main.js -cp build/classes day6.FibonacciTest",
+    "day7": "node src/day7/main.js -cp build/classes day7.ArrayTest",
+    "day8": "node src/day8/main.js -cp build/classes day8.HelloWorld",
+    "day9": "node src/day9/main.js -cp build/classes day9.ExceptionTest",
+    "day10": "node src/day10/main.js -cp build/classes day10.JvmDemo foo bar",
+    "build:web": "node scripts/pack-web.mjs",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.43"
+  }
+}
